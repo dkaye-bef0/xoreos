@@ -91,6 +91,8 @@ public:
 
 	/** Get the position of the node after translate/rotate. */
 	void getAbsolutePosition(float &x, float &y, float &z) const;
+	/** Get the position of the node in the world, instead of relative to the parent model. */
+	void getWorldPosition(float &x, float &y, float &z) const;
 
 	/** Get the position of the node after translate/rotate. */
 	glm::mat4 getAbsolutePosition() const;
